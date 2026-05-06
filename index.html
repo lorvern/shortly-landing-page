@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navigation -->
+  <nav>
+    <a href="#" class="logo">Shortly</a>
+
+    <ul class="nav-links">
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign Up</button>
+    </div>
+
+    <!-- Hamburger for mobile-->
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Mobile Dropdown -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+      <hr class="mobile-divider">
+      <button class="btn-login-mobile">Login</button>
+      <button class="btn-signup-mobile">Sign Up</button>
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>More than just shorter links</h1>
+      <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+      <button class="btn-get-started">Get Started</button>
+    </div>
+
+    <div class="hero-illustration">
+      <img
+        src="images/illus.png"
+        alt="Person working at a desk"
+        class="hero-img"
+      >
+    </div>
+  </section>
+
+
+  <!-- SHORTENER SECTION -->
+  <section class="shortener-section">
+    <div class="shortener-card">
+      <div class="shortener-row">
+        <div class="input-wrap">
+          <input
+            type="url"
+            id="url-input"
+            placeholder="Shorten a link here..."
+            aria-label="URL to shorten"
+          >
+          <p class="error-msg" id="error-msg" role="alert">Please add a link</p>
+        </div>
+        <button class="btn-shorten" id="shorten-btn">Shorten It!</button>
+      </div>
+    </div>
+
+    <!-- Shortened link result -->
+    <div class="results-list" id="results-list" aria-live="polite"></div>
+  </section>
+
+
+ 
+  <section class="stats-section">
+    <h2>Advanced Statistics</h2>
+    <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+    <div class="cards-grid">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="card-icon">
+          <img
+            src="images/icon1.png"
+            alt=""
+            aria-hidden="true"
+            width="36"
+            height="36"
+          >
+        </div>
+        <h3>Brand Recognition</h3>
+        <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="card-icon">
+          <img
+            src="images/icon2.png"
+            alt=""
+            aria-hidden="true"
+            width="36"
+            height="36"
+          >
+        </div>
+        <h3>Detailed Records</h3>
+        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+      </div>
+
+      <!-- CARD 3 — -->
+      <div class="card">
+        <div class="card-icon">
+          <img
+            src="images/icon3.png"
+            alt=""
+            aria-hidden="true"
+            width="36"
+            height="36"
+          >
+        </div>
+        <h3>Fully Customizable</h3>
+        <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- cta section -->
+  <section class="cta-section">
+    <h2>Boost your links today</h2>
+    <button class="btn-get-started">Get Started</button>
+  </section>
+
+
+    <!-- footer -->
+ <footer>
+  <div class="footer-inner">
+
+    <a href="#" class="footer-logo">Shortly</a>
+
+    <div class="footer-col">
+      <h4>Features</h4>
+      <ul>
+        <li><a href="#">Link Shortening</a></li>
+        <li><a href="#">Branded Links</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons — pushed to the far right -->
+    <div class="footer-col">
+      <div class="footer-social">
+
+        <a href="#" aria-label="Facebook">
+          <img src="images/Facebook.png" alt="" width="22" height="22">
+        </a>
+
+        <a href="#" aria-label="Twitter">
+          <img src="images/twitter.png" alt="" width="22" height="22">
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img src="images/pinterest.png" alt="" width="22" height="22">
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img src="images/instagram.png" alt="" width="22" height="22">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
